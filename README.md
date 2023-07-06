@@ -1,17 +1,19 @@
 # Preprocessing of Circulating tumour DNA
 
 ## Authors
-Glen Roarke
+Glen Roarke & Francisca Segars
 
 This set of python and shell scripts preprocess the outputs of bioinformatics preprocessing scripts.
 
 ## Description
 
+This workflow uses NHS patient information so no data files are included in the repo.
+
 ## Getting started
 
-ctDNA prep script must be run first on BlueCrystal HPC. Folders and file paths need to be defined.
+The ctDNA preparation step is run on the raw fastq reads, to trim low quality reads, map them to the human reference genome and recalibrate the bam files.
 
-### Dependencies
+Once this is completed the preprocessing scripts can be run in order to summarise the results in a table.
 
 01-samTools_coverage_parallel.slurm
 This script runs the samtools coverage command in parallel on each ctDNA prepared fastq file.
