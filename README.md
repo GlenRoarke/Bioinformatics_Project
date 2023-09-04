@@ -1,13 +1,11 @@
-# Preprocessing of Circulating tumour DNA
+# ctDNA nucleosome analysis using Griffin
 
 ## Authors
-Glen Roarke & Francisca Segers
-
-This set of python and shell scripts preprocess the outputs of bioinformatics preprocessing scripts.
+Glen Roarke , Francisca Segers & Adam Chambers
 
 ## Description
+Exploration of the colorectal cancer genome by liquid biopsies and Griffin nucleosome profiling of ctDNA
 
-This workflow uses NHS patient information so no data files are included in the repo.
 
 ## Getting started
 
