@@ -1,7 +1,7 @@
 # Preprocessing of Circulating tumour DNA
 
 ## Authors
-Glen Roarke & Francisca Segars
+Glen Roarke & Francisca Segers
 
 This set of python and shell scripts preprocess the outputs of bioinformatics preprocessing scripts.
 
