@@ -8,8 +8,10 @@ Exploration of the colorectal cancer genome by liquid biopsies and Griffin nucle
 
 
 ## Getting started
+Markdown files exist for R code used in this project, providing examples of multivariate analysis such as PCA , complex heatmaps and correlations.
 
-Below is a summary of the folders and there purpose.
+This analysis used patient information so no raw data is available to ensure privacy.
+
 
 ### ctDNA_prep
 The ctDNA preparation step is run on the raw fastq reads, to trim low quality reads, map them to the human reference genome and recalibrate the bam files.
@@ -32,6 +34,15 @@ This script imports the results from 01-samTools_coverage_parallel.slurm into a 
 This script uses pandas to combine all the preprocessing outputs into one table. Each file has been assigned a filename from a sample.
 
 ### Griffin_workflow
-Example of the open source software griffin and the custom snakemake developed griffin_nucleosome_profiling_tss.snakefile for Transcription start site analysis.               
+Example of the open source software griffin and the custom snakemake developed griffin_nucleosome_profiling_tss.snakefile for Transcription start site analysis.   
+
+### griffin_analysis
+The main folder of analysis for griffin TFBS and TSS configurations. markdwon files with patient personal information have not been included. 
+
+### reports 
+A folder containing a liquid biopsy and cfDNA review and my thesis.
+
 ### Executing programs.
-All the python scripts make use of the argparse module and have instructions for inputs.
+preprocessing_scripts can be used on the same respective outputs but may need editing based on the output.
+
+
