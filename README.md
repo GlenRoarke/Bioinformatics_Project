@@ -12,6 +12,9 @@ Markdown files exist for R code used in this project, providing examples of mult
 
 This analysis used patient information so no raw data is available to ensure privacy.
 
+## Folder Structure
+
+A summary of each folders purpose is summarised below.
 
 ### ctDNA_prep
 The ctDNA preparation step is run on the raw fastq reads, to trim low quality reads, map them to the human reference genome and recalibrate the bam files.
