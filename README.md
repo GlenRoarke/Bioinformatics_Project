@@ -8,7 +8,12 @@ Exploration of the colorectal cancer genome by liquid biopsies and Griffin nucle
 
 
 ## Getting started
-Markdown files exist for R code used in this project, providing examples of multivariate analysis such as PCA , complex heatmaps and correlations.
+
+The analysis work is unavailable pending future publication.
+
+Currently the reusable programs i developed for data manipulation to improve repeatability of the bioinformatic pipeline have been included. 
+
+Pending publication, Markdown files exist for R code used in this project, providing examples of multivariate analysis such as PCA , complex heatmaps and correlations.
 
 This analysis used patient information so no raw data is available to ensure privacy.
 
@@ -16,9 +21,6 @@ This analysis used patient information so no raw data is available to ensure pri
 
 A summary of each folders purpose is summarised below.
 
-### ctDNA_prep
-The ctDNA preparation step is run on the raw fastq reads, to trim low quality reads, map them to the human reference genome and recalibrate the bam files.
-Once this is completed the preprocessing scripts can be run in order to summarise the results in a table.
 
 ### Preprocessing
 01-samTools_coverage_parallel.slurm
@@ -35,17 +37,15 @@ This script imports the results from 01-samTools_coverage_parallel.slurm into a 
       
 05_merge_pre_results.py
 This script uses pandas to combine all the preprocessing outputs into one table. Each file has been assigned a filename from a sample.
+  
 
-### Griffin_workflow
-Example of the open source software griffin and the custom snakemake developed griffin_nucleosome_profiling_tss.snakefile for Transcription start site analysis.   
-
-### griffin_analysis
+### griffin_analysis (pending)
 The main folder of analysis for griffin TFBS and TSS configurations. markdwon files with patient personal information have not been included. 
 
-### reports 
+### reports (pending)
 A folder containing a liquid biopsy and cfDNA review and my thesis.
 
-### Executing programs.
+### Executing programs
 preprocessing_scripts can be used on the same respective outputs but may need editing based on the output.
 
 
